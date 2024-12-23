@@ -10,7 +10,7 @@ export class AppointmentService {
 
   constructor(private httpClient: HttpClient) { }
 
-  private baseUrl="http://localhost:8080/api/v2/appointments"
+  private baseUrl="https://hms-backend-g40z.onrender.com/api/v2/appointments"
 
 
   getAllAppointments():Observable<Appointment[]>{

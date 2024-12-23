@@ -8,8 +8,8 @@ import { Router } from '@angular/router';
   styleUrl: './adlogin.component.css'
 })
 export class AdloginComponent {
-  username:string="";
-  password:string="";
+  username:string="abcd";
+  password:string="1234";
 
   inValidLogi=false;
 

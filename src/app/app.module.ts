@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { AdmindashComponent } from './admindash/admindash.component';
 import { AppointmentComponent } from './appointment/appointment.component';
 import { CreateAppointmentComponent } from './create-appointment/create-appointment.component';
@@ -18,6 +18,8 @@ import { ViewPatientComponent } from './view-patient/view-patient.component';
 import { UpdateMedicineComponent } from './update-medicine/update-medicine.component';
 import { DocloginComponent } from './doclogin/doclogin.component';
 import { AdloginComponent } from './adlogin/adlogin.component';
+import { NgxUiLoaderHttpModule, NgxUiLoaderModule } from 'ngx-ui-loader';
+
 
 @NgModule({
   declarations: [
@@ -40,7 +42,11 @@ import { AdloginComponent } from './adlogin/adlogin.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    NgxUiLoaderModule,
+    NgxUiLoaderHttpModule.forRoot({
+      showForeground:true,
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -11,7 +11,9 @@ export class PatientService {
 
   constructor(private httpClient:HttpClient) { }
 
-  private baseUrl="http://localhost:8080/api/v1/patients"
+  private baseUrl="https://hms-backend-g40z.onrender.com/api/v1/patients"          
+
+  // http://localhost:8080/api/v1/patients
 
   getPatientList():Observable<Patient[]>{
     return this.httpClient.get<Patient[]>(`${this.baseUrl}`)

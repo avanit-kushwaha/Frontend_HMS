@@ -10,8 +10,8 @@ import { DocauthService } from '../docauth.service';
 export class DocloginComponent {
 
 
-  username:string="";
-  password:string="";
+  username:string="avanit";
+  password:string="12345";
 
   inValidLogi=false;
 

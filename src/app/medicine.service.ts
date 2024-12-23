@@ -11,7 +11,8 @@ export class MedicineService {
   constructor(private httpClient:HttpClient) { }
 
 
-    private baseUrl="http://localhost:8080/api/v3/medicines"
+    private baseUrl="https://hms-backend-g40z.onrender.com/api/v3/medicines"
+    // "http://localhost:8080/api/v3/medicines"
 
 
     getMedicines():Observable<Medicine[]>{
